@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    
+let hindi = parseInt(prompt("hindi marks"));
+let english =parseInt(prompt("english marks"));
+let math= parseInt(prompt("math marks"));
+let science =parseInt(prompt("science marks"));
+let per;
+let total = hindi+ english+ math+ science;
+per=total/4;
+document.write(per,"percentage")
+document.write("<br>")
+ if(per>=90 && per <=100){
+    document.write("its grade A+")
+} 
+else if(per>=60 && per<=90){
+    document.write("its grade B+")
+}
+
+else{
+    document.write("hello")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </script> 
+</body>
+</html>
