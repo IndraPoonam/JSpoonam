@@ -12,9 +12,15 @@
    <center><img src="" id="first" alt="" width="320px" height="320px" ></center>
    <center><h1 class="ad" >now i am learning advance javascript</h1></center>
    <center><button id="button" onclick="buttonid">click for more detail</button></center>
+<button onclick="multiple ()">product two number when click</button>
+<input id="a" value="" placeholder="enter a number">
+<input id="b" value="" placeholder="enter b number">
+<input id="product" value="" placeholder="result">
+
 </body>
 
 <script>
+    // ---------------------------------DOM---------------------
  x=   document.getElementsByClassName("ad")[0].innerHTML=" POONAM SINGH"
  document.getElementById("first").
  src="https://img.freepik.com/premium-vector/happy-woman-holding-glass-cup-hot-drink_316839-6499.jpg"
@@ -30,13 +36,20 @@ for(var i=0; i<p.length; i++){
 function buttonid(){
     alert("this task given by Naman sir");
 }
-
 let button= document.getElementById("button");
-button.addEventListener('click', buttonid);     
+button.addEventListener('click', buttonid);  
+   
+// =====================function type===[anonymous function]======================
+button.addEventListener('mouseover',function(){
+    console.log("function is anonymous");
+})
+// =====================function type===[named function]======================
+function multiple(){
+    var a= document.getElementById("a").value
+    var b= document.getElementById("b").value
+    document.getElementById("product").value= parseInt(a)*parseInt(b)
 
-
-
-
+}
 
 
 

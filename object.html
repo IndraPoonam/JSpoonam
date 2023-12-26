@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object by poonam</title>
+</head>
+<body>
+ <script>
+var a={
+    name: 'poonam',
+    surname: 'singh',
+     place: 'rewa',
+     age: 24,
+     Number: 123654123,
+     favHero: ['bachan','khan','deol'],
+favcity:{
+city: 'punjab',
+country: 'india',
+},
+     salary: function(){
+        return 30000;
+     },
+     fullname : function(){
+return this.name +" "+ this.surname;
+     }
+
+}
+console.log(a);
+// document.write(a.favHero);
+// document.write(a.favHero[2]);
+// document.write(a.salary());
+// document.write(a.fullname());
+document.write(a.favcity.city);
+
+
+
+
+ </script>   
+</body>
+</html>
